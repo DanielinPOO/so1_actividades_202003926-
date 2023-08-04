@@ -26,3 +26,10 @@ CRON_ENTRY="*/5 * * * * $(realpath $0)"
 (crontab -l; echo "$CRON_ENTRY") | crontab -
 
 echo "Cronjob agregado para ejecutar el script cada 5 minutos"
+
+# Permisos al comando: chmod +x nombre_del_script.sh
+# Ejecutar comando: ./nombre_del_script.sh
+# Verificar Crontab: crontab -l
+# Eliminar Crontab: crontab -r
+# Verificar logs: cat /tmp/202003926/saludos.log
+# Instalar jq para manejar las respuestas JSON: sudo apt-get install jq
