@@ -11,3 +11,16 @@ sudo useradd usuario3
 <p align="center">
   <img src="imgs/add_users.png" alt="Imagen 1" />
 </p>
+
+
+## 2. Asignación de Contraseñas
+**Para establecer nuevas contraseñas para los usuarios creados, utiliza el siguiente comando:**
+**Comando:**
+```bash
+sudo passwd usuario1
+sudo passwd usuario2
+sudo passwd usuario3
+```
+<p align="center">
+  <img src="imgs/change_password.png" alt="Imagen 2" />
+</p>
