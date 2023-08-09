@@ -66,4 +66,7 @@ sudo userdel usuario3
 sudo groupadd grupo1
 sudo groupadd grupo2
 ```
+<p align="center">
+  <img src="imgs/create_groups.png" alt="Imagen 5" />
+</p>
 
