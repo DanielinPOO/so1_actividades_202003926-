@@ -24,3 +24,23 @@ sudo passwd usuario3
 <p align="center">
   <img src="imgs/change_password.png" alt="Imagen 2" />
 </p>
+
+## 3. Información de Usuarios
+**Para mostrar la información del usuario usuario1 utilizando el comando id, ejecuta lo siguiente:**
+**Comando:**
+```bash
+id usuario1
+```
+<p align="center">
+  <img src="imgs/show_info.png" alt="Imagen 3" />
+</p>
+
+## 4. Eliminación de Usuarios
+**Si deseas eliminar al usuario usuario3 pero conservar su directorio principal, puedes ejecutar el siguiente comando:**
+**Comando:**
+```bash
+sudo userdel usuario3
+```
+<p align="center">
+  <img src="imgs/delete_user.png" alt="Imagen 4" />
+</p>
