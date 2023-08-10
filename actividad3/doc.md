@@ -70,3 +70,41 @@ sudo groupadd grupo2
   <img src="imgs/create_groups.png" alt="Imagen 5" />
 </p>
 
+## 2. Agregar Usuarios a Grupos
+**Para agregar usuario1 a grupo1 y usuario2 a grupo2, utiliza los siguientes**
+<br>
+
+**Comando:**
+```bash
+sudo usermod -aG grupo1 usuario1
+sudo usermod -aG grupo2 usuario2
+```
+<p align="center">
+  <img src="imgs/add_group.png" alt="Imagen 6" />
+</p>
+
+## 3. Verificar Membresía
+**Para verificar que los usuarios han sido agregados a los grupos, utiliza el comando groups de la siguiente manera:**
+<br>
+
+**Comando:**
+```bash
+groups usuario1
+groups usuario2
+```
+<p align="center">
+  <img src="imgs/show_group.png" alt="Imagen 7" />
+</p>
+
+## 4. Eliminar Grupo
+**Si deseas eliminar grupo2, puedes utilizar el siguiente comando:**
+<br>
+
+**Comando:**
+```bash
+sudo groupdel grupo2
+```
+<p align="center">
+  <img src="imgs/delete_group.png" alt="Imagen 8" />
+</p>
+
