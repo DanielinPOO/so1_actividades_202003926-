@@ -108,3 +108,33 @@ sudo groupdel grupo2
   <img src="imgs/delete_group.png" alt="Imagen 8" />
 </p>
 
+# Parte 3: Gestión de Permisos
+
+## 1. Creación de Archivos y Directorios
+**Crea un archivo llamado `archivo1.txt` en su directorio principal y escribe algo en él.**
+<br>
+
+**Comando:**
+```bash
+echo "Contenido del archivo 1" > archivo1.txt
+```
+<p align="center">
+  <img src="imgs/archivo1.png" alt="Imagen 9" />
+</p>
+<br>
+
+**Crea un directorio llamado directorio1 y Dentro de directorio1, crea un archivo llamado archivo2.txt.**
+<br>
+
+**Comando:**
+```bash
+mkdir directorio1
+touch directorio1/archivo2.txt
+```
+<p align="center">
+  <img src="imgs/archivo2.png" alt="Imagen 10" />
+</p>
+
+
+
+
