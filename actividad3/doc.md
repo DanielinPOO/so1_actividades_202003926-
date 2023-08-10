@@ -135,6 +135,97 @@ touch directorio1/archivo2.txt
   <img src="imgs/archivo2.png" alt="Imagen 10" />
 </p>
 
+## 2. Verificar Permisos
+**Para verificar los permisos del archivo y el directorio, utiliza los siguientes comandos:**
+<br>
+
+**Comando:**
+```bash
+ls -l archivo1.txt
+ls -ld directorio1
+```
+<p align="center">
+  <img src="imgs/show_permissions.png" alt="Imagen 11" />
+</p>
+
+## 3. Modificar Permisos usando chmod con Modo Numérico
+**Cambia los permisos del archivo1.txt con el siguiente comando:**
+<br>
+
+**Comando:**
+```bash
+chmod 640 archivo1.txt
+```
+<p align="center">
+  <img src="imgs/chmod.png" alt="Imagen 12" />
+</p>
+
+## 4. Modificar Permisos usando chmod con Modo Simbólico
+**Agrega permiso de ejecución al propietario del archivo2.txt con el siguiente comando:**
+<br>
+
+**Comando:**
+```bash
+chmod u+x directorio1/archivo2.txt
+```
+<p align="center">
+  <img src="imgs/chmod2.png" alt="Imagen 13" />
+</p>
+
+## 5. Cambiar el Grupo Propietario
+**Cambia el grupo propietario de archivo2.txt a grupo1 con el siguiente comando:**
+<br>
+
+**Comando:**
+```bash
+chown :grupo1 directorio1/archivo2.txt
+```
+<p align="center">
+  <img src="imgs/chown.png" alt="Imagen 14" />
+</p>
+
+## 6. Configurar Permisos de Directorio
+**Cambia los permisos del directorio1 con el siguiente comando:**
+<br>
+
+**Comando:**
+```bash
+chmod 750 directorio1
+```
+<p align="center">
+  <img src="imgs/chmod3.png" alt="Imagen 15" />
+</p>
+
+## 7. Comprobación de Acceso
+**Intenta acceder a archivo1.txt y directorio1/archivo2.txt como usuario2 y nota cómo el permiso de directorio afecta el acceso a los archivos dentro de él.**
+<br>
+
+**Comando:**
+```bash
+su usuario2   # Cambiar al usuario2
+cat archivo1.txt   # Intentar leer el archivo
+exit   # Salir del usuario2
+su usuario2   # Cambiar al usuario2
+cat directorio1/archivo2.txt   # Intentar leer el archivo
+exit   # Salir del usuario2
+```
+
+<p align="center">
+  <img src="imgs/denied.png" alt="Imagen 16" />
+</p>
+
+## 8. Verificación Final
+**Verifica los permisos y el propietario de los archivos y el directorio nuevamente con los siguientes comandos:**
+<br>
+
+**Comando:**
+```bash
+ls -l archivo1.txt
+ls -ld directorio1
+```
+<p align="center">
+  <img src="imgs/verify.png" alt="Imagen 17" />
+</p>
 
 
 
