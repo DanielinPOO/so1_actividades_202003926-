@@ -10,28 +10,19 @@ Este es un servicio systemd simple que ejecuta un script para imprimir un saludo
 
 3. Guarda los cambios en el archivo `hello_service.service`.
 
-4. Mueve el archivo `hello_service.service` a la ubicación de los servicios de systemd:
+4. Mueve el archivo `hello_service.service` a la ubicación de los servicios de systemd: `sudo mv hello_service.service /etc/systemd/system/`
 
-sudo mv hello_service.service /etc/systemd/system/
+5. Recarga la configuración de systemd: `sudo systemctl daemon-reload`
 
-5. Recarga la configuración de systemd: 
-
-sudo systemctl daemon-reload
-
-6. Habilita y arranca el servicio: 
-
+6. Habilita y arranca el servicio: `sudo systemctl start hello_service`
 
 ## Uso
 
-Una vez que el servicio esté en ejecución, el script imprimirá "Hola mundo! La fecha actual es:" seguido de la fecha actual en intervalos de tiempo. Para detener el servicio, puedes usar:
+Una vez que el servicio esté en ejecución, el script imprimirá "Hola mundo! La fecha actual es:" seguido de la fecha actual en intervalos de tiempo. Para detener el servicio, puedes usar: `sudo systemctl stop hello_service`
 
-sudo systemctl enable hello_service
-sudo systemctl start hello_service
-sudo systemctl stop hello_service
+Para habilitar el inicio automático del servicio en el arranque:  `sudo systemctl enable hello_service`
 
-Para deshabilitar el inicio automático del servicio en el arranque: 
-
-sudo systemctl disable hello_service
+Para deshabilitar el inicio automático del servicio en el arranque: `sudo systemctl disable hello_service`
 
 ¡Disfruta de tu servicio de saludo y fecha actual!
 
