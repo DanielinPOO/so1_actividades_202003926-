@@ -1,0 +1,9 @@
+[Unit]
+Description=Servicio de saludo y fecha actual
+
+[Service]
+Type=simple
+ExecStart=/ruta/a/tu/script/script.sh
+
+[Install]
+WantedBy=default.target
